@@ -330,7 +330,7 @@ h6 {
 
 blockquote {
   border-left: 4px solid $border-color;
-  font-style: italic;
+  // font-style: italic;
   margin: 0 2em;
   padding: 0.5em 0 0.5em 2em;
 }
@@ -632,6 +632,10 @@ figcaption {
       margin: -1em 0 0 0;
     }
   }
+  .content {
+    padding: 2em;
+  }
+  > div > blockquote > p,
   > div > p,
   > p {
     text-align: justify;
@@ -1782,4 +1786,18 @@ figcaption {
   h3 {
     page-break-after: avoid;
   }
+}
+
+.mermaid {
+  text-align: center;
+}
+
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
 }

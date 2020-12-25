@@ -1,1 +1,3 @@
-{{ default (i18n "date_format") | .Date.Format }}
+{{- $month_names := slice "壹" "貳" "叄" "肆" "伍" "陸" "柒" "捌" "玖" "拾" "冬" "臘" -}}
+{{- $month := sub .Date.Month 1 -}}
+{{ .Date.Year }}年{{ index $month_names $month }}月{{ .Date.Day }}日
